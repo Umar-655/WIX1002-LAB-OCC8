@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Question4 {
+    public static void main(String[] args){
+    System.out.println("==== Solar EV Charging Hub ====");
+    double Battery = 150.00;
+    System.out.println("Hub Battery: " + Battery + " kWh");
+    System.out.println("1. Compact Hatch (40 kWh, max 50 kW)");
+    System.out.println("2. Family SUV (75 kWh, max 120 kW)");
+    System.out.println("3. Delivery Van (90 kWh, max 80 kW)");
+    System.out.println("4. E-Scooter (4 kWh, max 3 kW)");
+    System.out.println("0. Close hub");
+    Scanner sc = new Scanner(System.in);
+    System.out.printf("Select a vehicle (0-4): ");
+    
+    if (sc.hasNextInt()) {              //Check if the input is a valid integer
+            int vehicle = sc.nextInt(); //Inside this loop is only when the input is an integer
+            
+    if (vehicle < 0 || vehicle > 4){
+        System.out.println("Error: Invalid vehicle selection.");
+    } else if (vehicle == 0) { 
+        System.out.println("Hub closed by Operator."); 
+    } else {
+        System.out.printf("Enter current battery level (0-99): "); 
+        int currentB = sc.nextInt();
+        System.out.printf("Enter target battery level (21-100): ");
+        int targetB = sc.nextInt();
+    }
+    //Not a valid integer condition
+    //Outside of the loop if its NOT a valid integer
+    } else {
+        System.out.println("Error: Please enter an integer from 0 to 4.");
+        sc.next();
+    }
+    //Charging calculations
+     while ( targetB <  currentB) {
+         System.out.println("hi");
+     }
+    }
+}
