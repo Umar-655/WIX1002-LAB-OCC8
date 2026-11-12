@@ -33,8 +33,7 @@ public class Question4 {
         sc.next();
     }
     //Charging calculations
-     while ( targetB <  currentB) {
-         System.out.println("hi");
+
      }
     }
 }
